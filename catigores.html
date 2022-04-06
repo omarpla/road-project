@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/vendor/ltr/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/vendor/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/main-ltr.css">
+
+</head>
+<body>
+    
+    <header style="top: 0%;">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                </div>
+            </div>
+            <div class="header-content">
+                <label class="logo"> <a href="#"> <span class="imlogo"> <img src="images/elc/logo.jpg" alt="">  </span></a></label>
+                <div class="list">
+                    <ul>
+                        <div class="cancel">
+                            <svg class="icon icon-cross ico-m"><use xlink:href="#icon-cross"></use>
+                                <symbol id="icon-cross" viewBox="0 0 32 32">
+                                    <path d="M31.708 25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 0.057-0.771-0.229-1.057l-4.586-4.586c-0.286-0.286-0.702-0.361-1.057-0.229-0.13 0.048-0.252 0.124-0.357 0.228 0 0-0 0-0 0l-9.708 9.708-9.708-9.708c-0-0-0-0-0-0-0.105-0.104-0.227-0.18-0.357-0.228-0.356-0.133-0.771-0.057-1.057 0.229l-4.586 4.586c-0.286 0.286-0.361 0.702-0.229 1.057 0.049 0.13 0.124 0.252 0.229 0.357 0 0 0 0 0 0l9.708 9.708-9.708 9.708c-0 0-0 0-0 0-0.104 0.105-0.18 0.227-0.229 0.357-0.133 0.355-0.057 0.771 0.229 1.057l4.586 4.586c0.286 0.286 0.702 0.361 1.057 0.229 0.13-0.049 0.252-0.124 0.357-0.229 0-0 0-0 0-0l9.708-9.708 9.708 9.708c0 0 0 0 0 0 0.105 0.105 0.227 0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z"></path>
+                                    </symbol>
+                            </svg>
+                        </div>
+                        
+                        <li><a href="./index.html"> Home</a></li>
+                        <li><a href="./catigores.html"> Categories</a></li>
+                        <li><a href="./index.html#about"> About</a></li>
+                        <li><a href="./index.html#contact"> Contact</a></li>
+                        <li><a href="./html/login.html"> Login </a></li>
+                        <li><a href="#pricing"> cart</a></li>
+                        <li><a href="./index.html"> <span><i class="fas fa-microphone"></i></span></a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <span><svg class="icon icon-menu ico-m"><use xlink:href="#icon-menu"></use>
+                        <symbol id="icon-menu" viewBox="0 0 32 32">
+                            <path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
+                            </symbol>
+                    </svg></span>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </header>
+    <section class="pru">
+    <!--end header-->
+    <!-- Control buttons -->
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('hand')"> computer</button>
+  <button class="btn" onclick="filterSelection('leg')"> iron</button>
+  <button class="btn" onclick="filterSelection('arm')"> television</button>
+  <button class="btn" onclick="filterSelection('knee')"> Washing Machine</button>
+</div>
+
+<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+
+<!--<div class="container">
+  
+  
+  <div class="filterDiv colors fruits">Orange</div>
+  <div class="filterDiv cars">Volvo</div>
+  <div class="filterDiv colors">Red</div>
+  <div class="filterDiv cars animals">Mustang</div>
+  <div class="filterDiv colors">Blue</div>
+  <div class="filterDiv animals">Cat</div>
+  <div class="filterDiv animals">Dog</div>
+  <div class="filterDiv fruits">Melon</div>
+  <div class="filterDiv fruits animals">Kiwi</div>
+  <div class="filterDiv fruits">Banana</div>
+  <div class="filterDiv fruits">Lemon</div>
+  <div class="filterDiv animals">Cow</div>
+</div>-->
+</section>
+    <!-- product section -->
+
+  <section class="product_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2 style="text-align: center;margin-top: 100px !important;">
+          Our Products
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-lg-4">
+          <div class="filterDiv hand">
+          <div class="box">
+            <div class="img-box">
+              <img src="./images/elc/catogery/computer1.jpg" alt="">
+              <a href="" class="add_cart_btn">
+                <span>
+                  Add To Cart
+                </span>
+              </a>
+            </div>
+            <div class="detail-box">
+              <h5>
+                Product Name
+              </h5>
+              <div class="product_info">
+                <h5>
+                  <span>$</span> 300
+                </h5>
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div></div>
+          
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="filterDiv hand">
+          <div class="box">
+            <div class="img-box">
+              <img src="./images/elc/catogery/computer2.jpg" alt="">
+              <a href="" class="add_cart_btn">
+                <span>
+                  Add To Cart
+                </span>
+              </a>
+            </div>
+            <div class="detail-box">
+              <h5>
+                Product Name
+              </h5>
+              <div class="product_info">
+                <h5>
+                  <span>$</span> 300
+                </h5>
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="filterDiv hand">
+          <div class="box">
+            <div class="img-box">
+              <img src="./images/elc/catogery/computer3.jpg" alt="">
+              <a href="" class="add_cart_btn">
+                <span>
+                  Add To Cart
+                </span>
+              </a>
+            </div>
+            <div class="detail-box">
+              <h5>
+                Product Name
+              </h5>
+              <div class="product_info">
+                <h5>
+                  <span>$</span> 300
+                </h5>
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="filterDiv arm">
+          <div class="box">
+            <div class="img-box">
+              <img src="./images/elc/catogery/television1.jpg" alt="">
+              <a href="" class="add_cart_btn">
+                <span>
+                  Add To Cart
+                </span>
+              </a>
+            </div>
+            <div class="detail-box">
+              <h5>
+                Product Name
+              </h5>
+              <div class="product_info">
+                <h5>
+                  <span>$</span> 300
+                </h5>
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="filterDiv arm">
+          <div class="box">
+            <div class="img-box">
+              <img src="./images/elc/catogery/television2.jpg" alt="">
+              <a href="" class="add_cart_btn">
+                <span>
+                  Add To Cart
+                </span>
+              </a>
+            </div>
+            <div class="detail-box">
+              <h5>
+                Product Name
+              </h5>
+              <div class="product_info">
+                <h5>
+                  <span>$</span> 300
+                </h5>
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+        
+        <div class="col-sm-6 col-lg-4">
+          <div class="filterDiv arm">
+          <div class="box">
+            <div class="img-box">
+              <img src="./images/elc/catogery/television3.webp" alt="">
+              <a href="" class="add_cart_btn">
+                <span>
+                  Add To Cart
+                </span>
+              </a>
+            </div>
+            <div class="detail-box">
+              <h5>
+                Product Name
+              </h5>
+              <div class="product_info">
+                <h5>
+                  <span>$</span> 300
+                </h5>
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+        
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-lg-4">
+          <div class="filterDiv knee">
+          <div class="box">
+            <div class="img-box">
+              <img src="./images/elc/catogery/Washing1.jpg" alt="">
+              <a href="" class="add_cart_btn">
+                <span>
+                  Add To Cart
+                </span>
+              </a>
+            </div>
+            <div class="detail-box">
+              <h5>
+                Product Name
+              </h5>
+              <div class="product_info">
+                <h5>
+                  <span>$</span> 300
+                </h5>
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="filterDiv knee">
+          <div class="box">
+            <div class="img-box">
+              <img src="./images/elc/catogery/Washing2.jpg" alt="">
+              <a href="" class="add_cart_btn">
+                <span>
+                  Add To Cart
+                </span>
+              </a>
+            </div>
+            <div class="detail-box">
+              <h5>
+                Product Name
+              </h5>
+              <div class="product_info">
+                <h5>
+                  <span>$</span> 300
+                </h5>
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="filterDiv knee">
+          <div class="box">
+            <div class="img-box">
+              <img src="./images/elc/catogery/Washing3.jpg" alt="">
+              <a href="" class="add_cart_btn">
+                <span>
+                  Add To Cart
+                </span>
+              </a>
+            </div>
+            <div class="detail-box">
+              <h5>
+                Product Name
+              </h5>
+              <div class="product_info">
+                <h5>
+                  <span>$</span> 300
+                </h5>
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="filterDiv leg">
+          <div class="box">
+            <div class="img-box">
+              <img src="./images/elc/catogery/iron1.jpg" alt="">
+              <a href="" class="add_cart_btn">
+                <span>
+                  Add To Cart
+                </span>
+              </a>
+            </div>
+            <div class="detail-box">
+              <h5>
+                Product Name
+              </h5>
+              <div class="product_info">
+                <h5>
+                  <span>$</span> 300
+                </h5>
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="filterDiv leg">
+          <div class="box">
+            <div class="img-box">
+              <img src="./images/elc/catogery/iron2.jpg" alt="">
+              <a href="" class="add_cart_btn">
+                <span>
+                  Add To Cart
+                </span>
+              </a>
+            </div>
+            <div class="detail-box">
+              <h5>
+                Product Name
+              </h5>
+              <div class="product_info">
+                <h5>
+                  <span>$</span> 300
+                </h5>
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="filterDiv leg">
+          <div class="box">
+            <div class="img-box">
+              <img src="./images/elc/catogery/iron3.png" alt="">
+              <a href="" class="add_cart_btn">
+                <span>
+                  Add To Cart
+                </span>
+              </a>
+            </div>
+            <div class="detail-box">
+              <h5>
+                Product Name
+              </h5>
+              <div class="product_info">
+                <h5>
+                  <span>$</span> 300
+                </h5>
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+          
+        </div>
+      </div>
+      <div class="btn_box">
+        <a href="" class="view_more-link">
+          View More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end product section -->
+    
+  <!---start footer-->
+<footer> 
+    <div class="foot">
+        <div class="row ">
+            
+        <div class="col-lg-2">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="#"> About us </a></li>
+                <hr>
+                <li><a href="#"> Sitemap </a></li>
+                <hr>
+                <li><a href="#">Bookmarks </a></li>
+                <hr>
+                <li><a href="#"> Sign in/Join </a></li>
+                <hr>
+            </ul>
+        </div>
+        <div class="col-lg-2">
+            <h3>How can we help?</h3>
+            <ul>
+                <li><a href="#"> Help </a></li>
+                <hr>
+                <li><a href="#"> Contact us </a></li>
+                <hr>
+                <li><a href="#">Where's my stuff? </a></li>
+                <hr>
+                <li><a href="#"> Where do you deliver? </a></li>
+                <hr>
+            </ul>
+        </div>
+        <div class="col-lg-2">
+            <h3>Join us</h3>
+            <ul>
+                <li><a href="#"> Affiliates </a></li>
+                <hr>
+                <li><a href="#">  Jobs </a></li>
+                <hr>
+            </ul>
+        </div>
+        <div class="col-lg-2">
+            <h3>Important stuff</h3>
+            <ul>
+                <li><a href="#">Cookies </a></li>
+                <hr>
+                <li><a href="#"> Privacy policy </a></li>
+                <hr>
+                <li><a href="#">Terms & Conditions </a></li>
+                <hr>
+            </ul>
+        </div>
+        <div class="col-lg-2">
+            <p>We accept these payment methods </p>
+            <div class="foot-img">
+  
+            </div>
+            <p>Payment methods
+                © 2021  The Book Depository Ltd.UK.
+                Registered company number: 5124926
+                </p>
+        </div>
+    </div>
+    
+    </div>
+  </footer>
+<!---end footer-->
+  <script src="./scripts/vendor/all.min.js"></script>
+<script src="./scripts/vendor/bootstrap.bundle.min.js"></script>
+<script src="./scripts/main.js"></script>
+</body>
+</html>
